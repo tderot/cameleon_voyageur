@@ -6,3 +6,18 @@
 #navbar_toggle {
 
 }
+
+
+
+/* CSS SECTION EMPLACEMENTS */
+.moduletableemplacements {
+    background-image: url("../img/bg_trucks_test.jpeg");
+    min-height: 420px;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.moduletableemplacements h2{
+    font-size: 30px;
+    color: white;
+}
