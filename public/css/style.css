@@ -6,3 +6,10 @@
 #navbar_toggle {
 
 }
+
+.moduletableemplacements {
+    background-image: url("../img/bg_trucks.jpeg");
+    min-height: 420px;
+    padding: 25px 0;
+    width: 100%;
+}
