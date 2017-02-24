@@ -5,9 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Le Caméléon voyageur</title>
-        <link href="public/css/bootstrap.min.css" rel="stylesheet">
+
+        <!------------------------------------ CSS--------------------------- -->
+        <link href="public/grid/css/default.css">
+        <link href="public/grid/css/component.css">
+    	<link href="public/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/css/style.css" rel="stylesheet">
+        <!------------------------------------ SCRIPT JS--------------------------- -->
+    	<script src="public/grid/js/modernizr.custom.js"></script>
+
+
+
+
+
     </head>
+
     <body>
         <!--Quentin : Header et photo de couverture -->
         <nav class="navbar navbar-default">
@@ -56,7 +68,44 @@
 
 				<h2>La carte</h2>
 
-				
+				<ul id="og-grid" class="og-grid">
+	<li>
+		<a href="" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+			<img src="images/thumbs/1.jpg" alt="img01"/>
+		</a>
+	</li>
+	<li>
+		<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+			<img src="images/thumbs/2.jpg" alt="img02"/>
+		</a>
+	</li>
+	<li><!-- ... --></li>
+	<!-- ... -->
+</ul>
+
+<li>
+
+	<a href="#" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+		<img src="public/grid/images/thumbs/2.jpg" alt="img02"/>
+	</a>
+	
+	<div class="og-expander">
+		<div class="og-expander-inner">
+			<span class="og-close"></span>
+			<div class="og-fullimg">
+				<div class="og-loading"></div>
+				<img src="public/grid/images/2.jpg">
+			</div>
+			<div class="og-details">
+				<h3>Veggies sunt bona vobis</h3>
+				<p>Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.</p>
+				<a href="#">Visit website</a>
+			</div>
+		</div>
+	</div>
+
+</li>
+
 
 
 
@@ -88,5 +137,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="public/js/bootstrap.min.js"></script>
         <script src="public/js/script.js"></script>
+        <script src="public/grid/js/grid.js"></script>
+
+        
     </body>
 </html>
