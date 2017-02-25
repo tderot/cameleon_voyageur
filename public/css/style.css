@@ -9,7 +9,20 @@
 
 .moduletableemplacements {
     background-image: url("../img/bg_trucks.jpeg");
+    background-repeat: repeat-x;
     min-height: 420px;
     padding: 25px 0;
     width: 100%;
+}
+
+.moduletableemplacements h2 {
+    font-size: 
+    color: white;
+}
+.col-md-2 .emplacements{
+    width: 13.661%; 
+}
+
+.col-xs-6 .emplacements{
+    width:3%;
 }
