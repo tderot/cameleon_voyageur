@@ -4,8 +4,27 @@
     border: none;
     border-bottom: thin solid rgba(0, 0, 0, 0.2);
 }
+#navbar-modal {
+    background-color: rgba(0, 0, 0, 0.9)!important;
+}
+#navbar-content {
+    background-color: rgba(0, 0, 0, 0.9)!important;
+}
+#navbar-header {
+    border: none;
+}
+#navbar-close {
+    font-size: 36px;
+    float: right;
+    color: white;
+}
+.navbar-list {
+    color: white!important;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
 .navbar_color {
-    background-color: black!important;
+    background-color: rgba(0, 0, 0, 1)!important;
 }
 .navbar_logo {
     height: 70px;
@@ -39,4 +58,4 @@
 
 .col-xs-6 .emplacements{
     width:3%;
-}
+}z

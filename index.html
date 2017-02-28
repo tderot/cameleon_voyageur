@@ -28,23 +28,30 @@
 
         <div class="container-fluid cover">
             <nav class="navbar navbar-inverse" id="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
-                            <span class="sr-only">Menu</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <img alt="Le logo du Caméléon voyageur" src="public/img/logo_min.png" class="img-responsive navbar_logo">
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapsed">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">Le Concept</a></li>
-                            <li><a href="#">La Carte</a></li>
-                            <li><a href="#">Ou nous trouver</a></li>
-                            <li><a href="#">Facebook et Contact</a></li>
-                        </ul>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#navbar-modal" aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img alt="Le logo du Caméléon voyageur" src="public/img/logo_min.png" class="img-responsive navbar_logo">
+                </div>
+                <div class="modal fade" tabindex="-1" role="dialog" id="navbar-modal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content" id="navbar-content">
+                            <div class="modal-header" id="navbar-header">
+                                <button type="button" class="btn btn-link btn-lg" data-dismiss="modal" id="navbar-close">X</button>
+                            </div>
+                            <div class="modal-body">
+                                <ul class="nav navbar-nav">
+                                    <li class="navbar-list"><a href="#">Le Concept</a></li>
+                                    <li class="navbar-list"><a href="#">Notre menu</a></li>
+                                    <li class="navbar-list"><a href="#">Où nous trouver</a></li>
+                                    <li class="navbar-list"><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
