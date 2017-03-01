@@ -47,9 +47,9 @@
 /* EMPLACEMENTS */
 
 .moduletableemplacements {
-    /*background-image: url("../img/bg-trucks2.png");
-    background-repeat: repeat;*/
-    background: #F0F0F2;
+    background-image: url("../img/bg_trucks2.jpeg");
+    background-repeat: repeat;
+    /*background: #F0F0F2;*/
     min-height: 420px;
     padding: 25px 0;
     width: 100%;
@@ -59,13 +59,61 @@
     font-size: 
     color: white;
 }
-.col-md-2 .emplacements{
-    width: 12.661%; 
+
+/*
+
+.moduletableemplacements img{
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
+.row-fluid .span12 {
+    width: 100%;
+}
+.row-fluid [class*="span"] {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-left: 2.12766%;
+    min-height: 28px;
+    width: 100%;
+}
+.row-fluid .span12 {
+    width: 100%;
+}
+
+.row-fluid [class*="span"] {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-left: 2.12766%;
+    min-height: 28px;
+    width: 100%;
+}
+.span12 {
+    width: 940px;
+}
+
+[class*="span"] {
+    float: left;
+    margin-left: 20px;
+    min-height: 1px;
+}
+.span12 {
+    width: 940px;
+}
+[class*="span"] {
+    float: left;
+    margin-left: 20px;
+    min-height: 1px;
+}
+
+*/
 /* CONCEPT */
 .img-circle{
-    border:5px solid #ADD052;
+    border: 5px solid #F9983A;
     max-width: 50%;
     height: auto;
     padding: 7px;
