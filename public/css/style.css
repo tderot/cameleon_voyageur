@@ -71,12 +71,19 @@ footer {
 }
 /*Fin footer */
 
+/* CARTE */
+
+.og-grid ul li img {
+    cursor: crosshair;
+}
+
+
 /* EMPLACEMENTS */
 
 .moduletableemplacements {
-    /*background-image: url("../img/bg-trucks2.png");
-    background-repeat: repeat;*/
-    background: #F0F0F2;
+    background-image: url("../img/bg_trucks2.jpeg");
+    background-repeat: repeat;
+    /*background: #F0F0F2;*/
     min-height: 420px;
     padding: 25px 0;
     width: 100%;
@@ -86,13 +93,14 @@ footer {
     font-size: 
     color: white;
 }
-.col-md-2 .emplacements{
-    width: 12.661%; 
+
+.trucks{
+    text-align: center;
 }
 
 /* CONCEPT */
 .img-circle{
-    border:5px solid #ADD052;
+    border: 5px solid #F9983A;
     max-width: 50%;
     height: auto;
     padding: 7px;
