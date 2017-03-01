@@ -57,29 +57,33 @@
 
 /*Footer */
 footer {
-    
-}
-.back-top {
-    float: right;
 }
 #footer_fb {
     border-right: thin solid rgba(0, 0, 0, 0.25);
     padding-top: 5px;
-    padding-bottom: 5px;
 }
 #footer_contact {
     padding-top: 5px;
-    padding-bottom: 5px;
-}
-#footer_legal {
-    padding-top: 5px;
-    border-top: thin solid rgba(0, 0, 0, 0.25);
 }
 .fb_like {
     margin-left: 40%;
 }
 .fb_plugin {
     margin-left: 10%;
+}
+@media (min-width: 768px) {
+    #backtotop {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 8%;
+    }
+}
+@media (max-width: 768px) {
+    #backtotop {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 5%;
+    }
 }
 /*Fin footer */
 
@@ -98,7 +102,7 @@ footer {
 
 .moduletableemplacements h2 {
     font-size: 
-    color: white;
+        color: white;
 }
 
 .trucks{
@@ -112,5 +116,18 @@ footer {
     height: auto;
     padding: 7px;
 
+}
+
+/*Hover */
+
+.info{
+    background-color: #4281a4;
+    opacity: 0.8;
+    position: absolute;
+    display: block;
+    color: White;
+    font-size: 16px;
+    height: 250px!important;
+    text-align: center;
 }
 
