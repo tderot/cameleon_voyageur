@@ -43,6 +43,12 @@
 
 /*Fin Header */
 
+/* CARTE */
+
+.og-grid ul li img {
+    cursor: crosshair;
+}
+
 
 /* EMPLACEMENTS */
 
@@ -60,57 +66,10 @@
     color: white;
 }
 
-/*
-
-.moduletableemplacements img{
-    border: 0 none;
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
+.trucks{
+    text-align: center;
 }
 
-.row-fluid .span12 {
-    width: 100%;
-}
-.row-fluid [class*="span"] {
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    margin-left: 2.12766%;
-    min-height: 28px;
-    width: 100%;
-}
-.row-fluid .span12 {
-    width: 100%;
-}
-
-.row-fluid [class*="span"] {
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    margin-left: 2.12766%;
-    min-height: 28px;
-    width: 100%;
-}
-.span12 {
-    width: 940px;
-}
-
-[class*="span"] {
-    float: left;
-    margin-left: 20px;
-    min-height: 1px;
-}
-.span12 {
-    width: 940px;
-}
-[class*="span"] {
-    float: left;
-    margin-left: 20px;
-    min-height: 1px;
-}
-
-*/
 /* CONCEPT */
 .img-circle{
     border: 5px solid #F9983A;
