@@ -7,8 +7,8 @@
         <title>Le Caméléon voyageur</title>
 
         <!------------------------------------ CSS--------------------------- -->
-        <link href="public/grid/css/default.css">
-        <link href="public/grid/css/component.css">
+        <link href="public/grid/css/default.css" rel="stylesheet">
+        <link href="public/grid/css/component.css" rel="stylesheet">
         <link href="public/css/bootstrap.min.css" rel="stylesheet">
         <link href="public/css/style.css" rel="stylesheet">
 
@@ -20,7 +20,7 @@
 
 
 
-        <script src="public/grid/js/modernizr.custom.js"></script>
+
     </head>
 
     <body>
@@ -54,7 +54,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2">
-                    <img src="..." alt="..." class="img-circle">
+                    <img src="public/img/flag_vert.png" alt="..." class="img-circle">
                     <H3>Mélange de cultures</H3>
                     <p>Ma femme et moi même vous proposons un mélange de culture dans vos assietes. En effet ma femme bla bla......</p>
 
@@ -65,7 +65,7 @@
 
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2">
-                    <img src="..." alt="..." class="img-circle">
+                    <img src="public/img/world.png" alt="..." class="img-circle">
                     <H3>Un savoir faire</H3>
                     <p>On est de super boucher boulanger charcutiers</p>
 
@@ -76,7 +76,7 @@
 
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2">
-                    <img src="..." alt="..." class="img-circle">
+                    <img src="public/img/quality.png" alt="..." class="img-circle">
                     <H3>Mélange de cultures</H3>
                     <p>Ma femme et moi même vous proposons un mélange de culture dans vos assietes. En effet ma femme bla bla......</p>
 
@@ -87,7 +87,7 @@
 
 
 
-            <div class="row">
+            
                 <h2>La carte</h2>
                 <div id="og-grid" class="og-grid">
                     <div class="row">
@@ -162,6 +162,44 @@
                     </div>    
 
                 </div>
+                <div class="main">
+					<ul id="og-grid" class="og-grid">
+						<li>
+							<a href="#" data-largesrc="public/grid/images/1.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+								<img src="public/grid/images/thumbs/1.jpg" alt="img01"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-largesrc="public/grid/images/2.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+								<img src="public/grid/images/thumbs/2.jpg" alt="img02"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-largesrc="public/grid/images/3.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+								<img src="public/grid/images/thumbs/3.jpg" alt="img03"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-largesrc="public/grid/images/4.png" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+								<img src="public/grid/images/thumbs/4.jpg" alt="img04"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-largesrc="public/grid/images/5.png" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+								<img src="public/grid/images/thumbs/5.jpg" alt="img05"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-largesrc="public/grid/images/6.png" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+								<img src="public/grid/images/thumbs/6.jpg" alt="img06"/>
+							</a>
+						</li>
+					
+					</ul>
+
+						<p>Filler text by <a href="http://veggieipsum.com/">Veggie Ipsum</a></p>
+						<a id="og-additems" href="#">add more</a>
+				</div>
             </div>
 
 
@@ -205,11 +243,18 @@
             <script src="public/grid/js/grid.js"></script>
 
 
-            <script> 
-                $(function() { 
-                    Grid.init(); 
-                }); 
-            </script>
+            <script>
+			$(function() {
+				Grid.init();
+				// adding more items
+				$('#og-additems').on( 'click', function() {
+					var $items = $( '<li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li>' ).appendTo( $( '#og-grid' ) );
+					
+					Grid.addItems( $items );
+					return false;
+				} );
+			});
+		</script>
 
             </body>
         </html>
