@@ -57,14 +57,10 @@
 
 .moduletableemplacements h2 {
     font-size: 
-        color: white;
+    color: white;
 }
 .col-md-2 .emplacements{
-    width: 13.661%; 
-}
-
-.col-xs-6 .emplacements{
-    width:3%;
+    width: 12.661%; 
 }
 
 /* CONCEPT */
