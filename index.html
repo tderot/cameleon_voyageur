@@ -10,6 +10,7 @@
         <link href="public/css/default.css" rel="stylesheet">
         <link href="public/css/component.css" rel="stylesheet">
         <link href="public/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="public/css/style.css" rel="stylesheet"> <!-- Style général-->
 
         <!------------------------------------ SCRIPT JS--------------------------- -->
@@ -37,18 +38,23 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#concept">Concept</a></li>
                             <li><a href="#menu">Carte</a></li>
-                            <li><a href="#plan">Où nous trouver</a></li>
+                            <li><a href="#carte">Où nous trouver</a></li>
                             <li><a href="#footer">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <div class="row text-center">
+                <div class="col-xs-10 col-xs-offset-1 cover_text">
+                    <h1 class="cover_h1">LE CAMELEON VOYAGEUR</h1>
+                    <h2 class="cover_h2">En région Orléanaise</h2>
+                </div>
+            </div>
         </div>
         <!--Thibault : Concept et carte -->
 
-<hr/>
         <div class="container-fluid text-center" id="concept">
-            <h2>Le Concept</h2>
+            <h1>Le Concept</h1>
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
                     <img src="public/img/concept1.png" alt="concept1" class="img-circle">
@@ -82,9 +88,9 @@
 
 
 
-<hr/>
+            <hr/>
             <div class="main" id="menu">
-                <h2>LA CARTE</h2>
+                <h1>La Carte</h1>
                 <ul id="og-grid" class="og-grid">
                     <li class="grid-li">
                         <a href="#" data-largesrc="public/grid/images/1.png" data-title="BAGELS | 6.60 €" data-description="<ul><li>Feta Valise <p>Végétarien</p></li> <li>Lox on the road <p>Poisson</p></li> <li>Dinde de toi, Serano de Bergerax <p>Charcuterie</p></li> <li>Poulet Voyageur, Manhattan maboul <p>Viande</p></li></ul>">
@@ -93,37 +99,37 @@
                     </li>
                     <li class="grid-li">
                         <a href="#" data-largesrc="public/grid/images/2.png" data-title="ROLLS" data-description="
-                        <ul>
-                        	<li>Chicken Rolls | 4,50€<p>Poulet teriyaki, avocat, concombre</p></li>
-                        	<li>Rock'n'Rolls | 5,00€<p>Saumon, avocat, concombre</p></li>
-                        	<li>Thon thon Rolls | 5,00€<p>Thonade, avocat, concombre</p></li>
-                        </ul>">
+                                                                                                                  <ul>
+                                                                                                                  <li>Chicken Rolls | 4,50€<p>Poulet teriyaki, avocat, concombre</p></li>
+                                                                                                                  <li>Rock'n'Rolls | 5,00€<p>Saumon, avocat, concombre</p></li>
+                                                                                                                  <li>Thon thon Rolls | 5,00€<p>Thonade, avocat, concombre</p></li>
+                                                                                                                  </ul>">
 
                             <img src="public/grid/images/thumbs/2.jpg" alt="img02"/>
                         </a>
                     </li>
                     <li class="grid-li">
                         <a href="#" data-largesrc="public/grid/images/3.png" data-title="SALADES & Co" data-description="
-                        <ul>
-                        	<li>Kimbap | 6,60€<p>Thonade, carotte, concombre, oeuf, radis</p></li>
-                        	<li>Mandu | 2,50€<p>Ravioli Coréen X6</p></li>
-                        	<li>Petit salade | 2,00€<p>Coleslaw,grecque</p></li>
-                        	<li>Grande salade | 4,00€<p>Coleslaw,grecque</p></li>
-                        	<li>Chips | 1,50€</li>
-                        </ul>">
+                                                                                                                         <ul>
+                                                                                                                         <li>Kimbap | 6,60€<p>Thonade, carotte, concombre, oeuf, radis</p></li>
+                                                                                                                         <li>Mandu | 2,50€<p>Ravioli Coréen X6</p></li>
+                                                                                                                         <li>Petit salade | 2,00€<p>Coleslaw,grecque</p></li>
+                                                                                                                         <li>Grande salade | 4,00€<p>Coleslaw,grecque</p></li>
+                                                                                                                         <li>Chips | 1,50€</li>
+                                                                                                                         </ul>">
                             <img src="public/grid/images/thumbs/3.jpg" alt="img03"/>
                         </a>
                     </li>
                     <li class="grid-li">
                         <a href="#" data-largesrc="public/grid/images/4.png" data-title="BOISSONS" data-description="
-                        <ul>
-                        	<li>Boissons froides | 1,50€<p>Sodas 33cl, eau 50cl</p></li>
-                        	<li>Boissons chaudes | 1,50€<p>Expresso</p></li>
+                                                                                                                     <ul>
+                                                                                                                     <li>Boissons froides | 1,50€<p>Sodas 33cl, eau 50cl</p></li>
+                                                                                                                     <li>Boissons chaudes | 1,50€<p>Expresso</p></li>
 
 
 
 
-                        </ul>">
+                                                                                                                     </ul>">
                             <img src="public/grid/images/thumbs/4.jpg" alt="img04"/>
                         </a>
                     </li>
@@ -145,58 +151,69 @@
 
 
         <!--Hagera : Carte et plan -->
-<hr/>
+        <div class="container-fluid text-center">
+            <div class="row" id="carte">
+                <div class=" moduletableemplacements col-xs-4 col-md-10 col-md-offset-0">
+                    <h1>Où nous trouver ?</h1>
+                    <hr />
 
-        <div class="row-fluid" id="carte">
-        	<h2>Où nous trouver ?</h2>
-            <div class=" moduletableemplacements col-xs-4 col-md-10 col-md-offset-0">
-                
-
-
-                <div class="trucks">
+                    <div class="trucks">
 
 
-		            <img src="public/img/trucks-emplacements/trucks_1.png" class="hover_text" alt="De 12h à 14h au LabO, 1 Avenue du Champ de Mars, Orléans">
+                        <img src="public/img/trucks-emplacements/trucks_1.png" class="hover_text" alt="De 12h à 14h au LabO, 1 Avenue du Champ de Mars, Orléans">
 
 
-                    <img src="public/img/trucks-emplacements/trucks_2.png" class="hover_text" alt="De 12h à 14h à la Faculté de Droit, 6 Avenue du Parc Floral, Orléans">
+                        <img src="public/img/trucks-emplacements/trucks_2.png" class="hover_text" alt="De 12h à 14h à la Faculté de Droit, 6 Avenue du Parc Floral, Orléans">
 
 
 
-                    <img src="public/img/trucks-emplacements/trucks_3.png" class="hover_text" alt="De 12h à 14h au LabO, 1 Avenue du Champ de Mars, Orléans">
+                        <img src="public/img/trucks-emplacements/trucks_3.png" class="hover_text" alt="De 12h à 14h au LabO, 1 Avenue du Champ de Mars, Orléans">
 
 
 
-                    <img src="public/img/trucks-emplacements/trucks_4.png" class="hover_text" alt="De 12h à 14h au V&B, 15 Rue Pierre et Marie Curie, Ingré">
+                        <img src="public/img/trucks-emplacements/trucks_4.png" class="hover_text" alt="De 12h à 14h au V&B, 15 Rue Pierre et Marie Curie, Ingré">
 
 
-                    <img src="public/img/trucks-emplacements/trucks_5.png" class="hover_text" alt="De 12h à 14 au Lycée Charles Péguy, 1 Cours Victor Hugo, Orléans">
+                        <img src="public/img/trucks-emplacements/trucks_5.png" class="hover_text" alt="De 12h à 14 au Lycée Charles Péguy, 1 Cours Victor Hugo, Orléans">
 
 
 
-                    <img src="public/img/trucks-emplacements/trucks_6.png" class="hover_text" alt="Selon les évènements, suivez notre page Facebook pour plus d'informations">
+                        <img src="public/img/trucks-emplacements/trucks_6.png" class="hover_text" alt="Selon les évènements, suivez notre page Facebook pour plus d'informations">
 
+
+                    </div>
 
                 </div>
-
             </div>
         </div>
 
+<<<<<<< HEAD
 
         <!--Quentin : Footer -->
         <footer id="footer" class="container-fluid text-center">
 
             <a class="btn btn-default cols-xs-10 col-xs-offset-1" href="#cover" role="button" id="backtotop">Retour en haut</a>
+=======
+        <!--Quentin : Footer -->
+        <footer id="footer" class="container-fluid text-center">
+            <div class="row to-top"> 
+                <div class="to-top-wrap"> 
+                    <a href="#top" class="top"><i class="fa fa-angle-up"></i></a> 
+                </div> 
+            </div>
+>>>>>>> 09033272dc699c155196acf715abaa02562da180
             <div class="row">
                 <div id="footer_fb" class="col-xs-12 col-md-6">
                 </div>
                 <div id="footer_contact" class="col-xs-12 col-md-4 col-md-offset-1 text-center">
-                    <h1>Contact</h1><br />
+                    <br />
+                    <br />
+                    <h3>Contact</h3><br />
                     <p>Téléphone : 06.69.15.43.08</p>
                     <p>Adresse e-mail : lecameleonvoyageur@email.fr</p>
                     <p>Si possible, privilégiez de nous contacter par Facebook.</p>
-                    <h1>Mentions légales</h1><br />
-                    <p>Copyright © 2016 Wild Circus | Created by Wild Code School</p>
+                    <h3>Mentions légales</h3><br />
+                    <p>Copyright © 2017 Le Caméléon Voyageur | Created by Wild Code School</p>
                 </div>
             </div>
         </footer>
