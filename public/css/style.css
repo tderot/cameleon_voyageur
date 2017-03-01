@@ -1,0 +1,215 @@
+@media (min-width: 768px) {
+    :target:before {
+        content:"";
+        display:block;
+        height:100px; /* fixed header height*/
+        margin:-100px 0 0; /* negative fixed header height */
+    }
+}
+@media (max-width: 768px) {
+    :target:before {
+        content:"";
+        display:block;
+        height:50px; /* fixed header height*/
+        margin:-50px 0 0; /* negative fixed header height */
+    }
+}
+/*POLICES*/
+@font-face {
+    font-family: 'sierra_madre';
+    src: url('../fonts/sierra_madre-webfont.woff2') format('woff2'),
+        url('../fonts/sierra_madre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-medium-webfont.woff') format('woff');
+}
+* {
+    font-family: 'montserrat', sans-serif;
+}
+
+/*FIN POLICES*/
+
+/*Header*/
+
+/*Navbar */
+#navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: thin solid rgba(0, 0, 0, 0.2);
+}
+#navbar-collapsed {
+    border-top: none;
+}
+.navbar-toggle {
+    border: none;
+    border-radius: none;
+}
+.navbar-color {
+    background-color: rgba(0, 0, 0, 1)!important;
+}
+.navbar-logo {
+    height: 100px;
+}
+.navbar-nav > li > a {
+    color: white !important;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        line-height: 70px;
+    }
+    .navbar-nav > li > a {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 50px;
+    }
+    .navbar-nav > li > a {
+        font-size: 24px;
+    }
+}
+/*Cover*/
+.cover {
+    min-height: 750px;
+    background: url("../img/cover.jpg") center center;
+    background-size: cover;
+    position: relative;
+}
+
+.cover_h1 {
+    font-size: 90px;
+    font-weight: 700;
+    font-family: 'sierra_madre';
+}
+.cover_h2{
+    font-size: 40px;
+}
+@media (min-width: 768px) {
+    .cover_text {
+        color: white;
+        margin-top: 350px;
+    }
+    .cover_h1 {
+        font-size: 90px;
+        font-weight: 700;
+        font-family: 'sierra_madre';
+    }
+    .cover_h2{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .cover_text {
+        color: white;
+        margin-top: 100px;
+    }
+    .cover_h1 {
+        font-size: 60px;
+        font-weight: 300;
+        font-family: 'sierra_madre';
+    }
+    .cover_h2{
+        font-size: 20px;
+    }
+}
+/*Fin Header */
+
+/*Footer */
+.to-top {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.to-top .to-top-wrap {
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center; 
+}
+.to-top .to-top-wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.to-top .to-top-wrap a:hover, .to-top .to-top-wrap a:focus {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+.to-top .to-top-wrap i {
+    font-size: 30px;
+    line-height: 55px; 
+}
+.to-top .row {
+    position: relative; 
+}
+
+#footer_fb {
+    border-right: thin solid rgba(0, 0, 0, 0.25);
+    padding-top: 5px;
+}
+#footer_contact {
+    padding-top: 5px;
+}
+.fb_like {
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.fb_plugin {
+    margin-left: 10%;
+}
+
+
+/*Fin footer */
+
+
+
+/* EMPLACEMENTS */
+
+.moduletableemplacements {
+    background-image: url("../img/bg_trucks2.jpeg");
+    background-repeat: repeat;
+    /*background: #F0F0F2;*/
+    min-height: 420px;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.moduletableemplacements h2 {
+    font-size: 
+        color: white;
+}
+
+.trucks{
+    text-align: center;
+}
+
+/* CONCEPT */
+.img-circle{
+    border: 5px solid #F9983A;
+    max-width: 50%;
+    height: auto;
+    padding: 7px;
+
+}
+
+
+/*Hover */
+
+.info{
+    background-color: #F9983A;
+    opacity: 0.8;
+    position: absolute;
+    display: block;
+    color: White;
+    font-size: 16px;
+    height: 250px!important;
+    text-align: center;
+    padding: 1%;
+}
+

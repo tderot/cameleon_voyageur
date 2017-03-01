@@ -5,88 +5,236 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Le Caméléon voyageur</title>
+
+        <!------------------------------------ CSS--------------------------- -->
+        <link href="public/css/default.css" rel="stylesheet">
+        <link href="public/css/component.css" rel="stylesheet">
         <link href="public/css/bootstrap.min.css" rel="stylesheet">
-        <link href="public/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="public/css/style.css" rel="stylesheet"> <!-- Style général-->
+
+        <!------------------------------------ SCRIPT JS--------------------------- -->
+
+        <script src="public/grid/js/modernizr.custom.js"></script>
     </head>
+
     <body>
         <!--Quentin : Header et photo de couverture -->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Le logo du Caméléon voyageur" src="public/img/logo.png" class="center-block img-responsive">
-                    </a>
+
+        <div class="container-fluid cover" id="cover">
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img src="public/img/logo_min.png" class="navbar-logo">
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapsed">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#concept">Concept</a></li>
+                            <li><a href="#menu">Carte</a></li>
+                            <li><a href="#carte">Où nous trouver</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row text-center">
+                <div class="col-xs-10 col-xs-offset-1 cover_text">
+                    <h1 class="cover_h1">LE CAMELEON VOYAGEUR</h1>
+                    <h2 class="cover_h2">En région Orléanaise</h2>
                 </div>
             </div>
-        </nav>
-        <div class="container-fluid">
         </div>
         <!--Thibault : Concept et carte -->
-        <div class="container-fluid">
 
-        	<div class="row">
-				<div class="col-xs-8 col-xs-offset-2">
-					<img src="..." alt="..." class="img-circle">
-						<H3>Mélange de cultures</H3>
-						<p>Ma femme et moi même vous proposons un mélange de culture dans vos assietes. En effet ma femme bla bla......</p>
+        <div class="container-fluid text-center" id="concept">
+            <h1>Le Concept</h1>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
+                    <img src="public/img/concept1.png" alt="concept1" class="img-circle">
+                    <H3>Mélange de cultures</H3>
+                    <p>Nous voulions créer un concept innovant. Ma femme étant d'origine coréenne, nous avons décidé d'utiliser cette culture culinaire pour l'associer à un autre concept celui des Bagels. C'est pourquoi nous vous proposons une carte exotique liant l'Asie et le pays de l'Oncle Sam.</p>
 
-				</div>
-				
-			</div>
-
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2">
-					<img src="..." alt="..." class="img-circle">
-						<H3>Un savoir faire</H3>
-						<p>On est de super boucher boulanger charcutiers</p>
-
-				</div>
-				
-			</div>
-
-
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2">
-					<img src="..." alt="..." class="img-circle">
-						<H3>Mélange de cultures</H3>
-						<p>Ma femme et moi même vous proposons un mélange de culture dans vos assietes. En effet ma femme bla bla......</p>
-
-				</div>
-				
-			</div>
+                </div>
 
 
 
 
+                <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
+                    <img src="public/img/concept2.png" alt="concept2" class="img-circle">
+                    <H3>Foood Truck</H3>
+                    <p>Pourquoi le foodtruck? <br/> Car nous voulions proposer des repas differents des traditionnels pizza,kebab etc... Et ainsi permettre aux personnes déjeunant rapidement une cuisine fait maison:<br/> simple, pratique et savoureuse.</p>
+
+                </div>
+
+
+
+                <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-0">
+                    <img src="public/img/concept3.png" alt="concept3" class="img-circle">
+                    <H3>Nos valeurs</H3>
+                    <p>Tous nos produits sont fais maison. Nous ne pouvions imaginer proposer une cuisine traditionnelle en utilisant des ingrediants de qualité moindre. C'est pourquoi tous nos produits sont conçus avec des ingrédients frais et de bonne qualités.</p>
+                </div>
+
+            </div>
+
+
+<!--il y a beaucoup d'espace ici -->
+
+
+
+            <hr/>
+            <div class="main" id="menu">
+                <h1>La Carte</h1>
+                <ul id="og-grid" class="og-grid">
+                    <li class="grid-li">
+                        <a href="#" data-largesrc="public/grid/images/1.png" data-title="BAGELS | 6.60 €" data-description="<ul><li>Feta Valise <p>Végétarien</p></li> <li>Lox on the road <p>Poisson</p></li> <li>Dinde de toi, Serano de Bergerax <p>Charcuterie</p></li> <li>Poulet Voyageur, Manhattan maboul <p>Viande</p></li></ul>">
+                            <img src="public/grid/images/thumbs/1.jpg" alt="img01"/>
+                        </a>
+                    </li>
+                    <li class="grid-li">
+                        <a href="#" data-largesrc="public/grid/images/2.png" data-title="ROLLS" data-description="
+                                                                                                                  <ul>
+                                                                                                                  <li>Chicken Rolls | 4,50€<p>Poulet teriyaki, avocat, concombre</p></li>
+                                                                                                                  <li>Rock'n'Rolls | 5,00€<p>Saumon, avocat, concombre</p></li>
+                                                                                                                  <li>Thon thon Rolls | 5,00€<p>Thonade, avocat, concombre</p></li>
+                                                                                                                  </ul>">
+
+                            <img src="public/grid/images/thumbs/2.jpg" alt="img02"/>
+                        </a>
+                    </li>
+                    <li class="grid-li">
+                        <a href="#" data-largesrc="public/grid/images/3.png" data-title="SALADES & Co" data-description="
+                                                                                                                         <ul>
+                                                                                                                         <li>Kimbap | 6,60€<p>Thonade, carotte, concombre, oeuf, radis</p></li>
+                                                                                                                         <li>Mandu | 2,50€<p>Ravioli Coréen X6</p></li>
+                                                                                                                         <li>Petit salade | 2,00€<p>Coleslaw,grecque</p></li>
+                                                                                                                         <li>Grande salade | 4,00€<p>Coleslaw,grecque</p></li>
+                                                                                                                         <li>Chips | 1,50€</li>
+                                                                                                                         </ul>">
+                            <img src="public/grid/images/thumbs/3.jpg" alt="img03"/>
+                        </a>
+                    </li>
+                    <li class="grid-li">
+                        <a href="#" data-largesrc="public/grid/images/4.png" data-title="BOISSONS" data-description="
+                                                                                                                     <ul>
+                                                                                                                     <li>Boissons froides | 1,50€<p>Sodas 33cl, eau 50cl</p></li>
+                                                                                                                     <li>Boissons chaudes | 1,50€<p>Expresso</p></li>
 
 
 
 
+                                                                                                                     </ul>">
+                            <img src="public/grid/images/thumbs/4.jpg" alt="img04"/>
+                        </a>
+                    </li>
+                    <li class="grid-li">
+                        <a href="#" data-largesrc="public/grid/images/5.png" data-title="DESSERTS" data-description="<ul> <li>Muffin | 2.70 € <p>Blueberry, pépites de chocolat</p></li> <li>Cookies | 2.50 €<p>Pépites de chocolat, tout chocolat</p></li><li>Cheesecake maison | 3.50 € <p></p></li></ul>">
+                            <img src="public/grid/images/thumbs/5.jpg" alt="img05"/>
+                        </a>
+                    </li>
+                    <li class="grid-li">
+                        <a href="#" data-largesrc="public/grid/images/6.png" data-title="FORMULES" data-description="<ul><li>La faim de la route | 7.60 € <p>Bagel ou Kimbap + Boisson</p></li> <li>La faim du voyage | 8.60 € <p>Bagel + Petite salade ou chips + Boisson</p></li> <li>Une faim de loup | 10 €<p>Bagel + Dessert + Boisson</p></li><li>La faim du monde | 11.50 €<p>Bagel Petite salade ou chips + Dessert + Boisson</p></li></ul>">
+                            <img src="public/grid/images/thumbs/6.jpg" alt="img06"/>
+                        </a>
+                    </li>
 
+                </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
         </div>
+
+
         <!--Hagera : Carte et plan -->
-        <div class="container-fluid">
+        <div class="container-fluid text-center">
+            <div class="row" id="carte">
+                <div class=" moduletableemplacements col-xs-4 col-md-10 col-md-offset-0">
+                    <h1>Où nous trouver ?</h1>
+                    <hr />
+
+                    <div class="trucks">
+
+
+                        <img src="public/img/trucks-emplacements/trucks_1.png" class="hover_text" alt="De 12h à 14h au LabO, 1 Avenue du Champ de Mars, Orléans">
+
+
+                        <img src="public/img/trucks-emplacements/trucks_2.png" class="hover_text" alt="De 12h à 14h à la Faculté de Droit, 6 Avenue du Parc Floral, Orléans">
+
+
+
+                        <img src="public/img/trucks-emplacements/trucks_3.png" class="hover_text" alt="De 12h à 14h au LabO, 1 Avenue du Champ de Mars, Orléans">
+
+
+
+                        <img src="public/img/trucks-emplacements/trucks_4.png" class="hover_text" alt="De 12h à 14h au V&B, 15 Rue Pierre et Marie Curie, Ingré">
+
+
+                        <img src="public/img/trucks-emplacements/trucks_5.png" class="hover_text" alt="De 12h à 14 au Lycée Charles Péguy, 1 Cours Victor Hugo, Orléans">
+
+
+
+                        <img src="public/img/trucks-emplacements/trucks_6.png" class="hover_text" alt="Selon les évènements, suivez notre page Facebook pour plus d'informations">
+
+
+                    </div>
+
+                </div>
+            </div>
         </div>
+
+<<<<<<< HEAD
+
         <!--Quentin : Footer -->
-        <footer>
+        <footer id="footer" class="container-fluid text-center">
+
+            <a class="btn btn-default cols-xs-10 col-xs-offset-1" href="#cover" role="button" id="backtotop">Retour en haut</a>
+=======
+        <!--Quentin : Footer -->
+        <footer id="footer" class="container-fluid text-center">
+            <div class="row to-top"> 
+                <div class="to-top-wrap"> 
+                    <a href="#top" class="top"><i class="fa fa-angle-up"></i></a> 
+                </div> 
+            </div>
+>>>>>>> 09033272dc699c155196acf715abaa02562da180
+            <div class="row">
+                <div id="footer_fb" class="col-xs-12 col-md-6">
+                </div>
+                <div id="footer_contact" class="col-xs-12 col-md-4 col-md-offset-1 text-center">
+                    <br />
+                    <br />
+                    <h3>Contact</h3><br />
+                    <p>Téléphone : 06.69.15.43.08</p>
+                    <p>Adresse e-mail : lecameleonvoyageur@email.fr</p>
+                    <p>Si possible, privilégiez de nous contacter par Facebook.</p>
+                    <h3>Mentions légales</h3><br />
+                    <p>Copyright © 2017 Le Caméléon Voyageur | Created by Wild Code School</p>
+                </div>
+            </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="public/js/bootstrap.min.js"></script>
         <script src="public/js/script.js"></script>
+        <script src="public/grid/js/grid.js"></script>
+
+
+        <script>
+            $(function() {
+                Grid.init();
+                // adding more items
+                $('#og-additems').on( 'click', function() {
+                    var $items = $( '<li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li>' ).appendTo( $( '#og-grid' ) );
+
+                    Grid.addItems( $items );
+                    return false;
+                } );
+            });
+        </script>
+
     </body>
 </html>
