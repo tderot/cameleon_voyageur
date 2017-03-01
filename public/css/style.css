@@ -65,17 +65,14 @@
 
 .col-xs-6 .emplacements{
     width:3%;
-<<<<<<< HEAD
-
-=======
->>>>>>> 37f0146c564d20b4675dbdc19b9ac4ac84ef69be
 }
 
 /* CONCEPT */
 .img-circle{
-    border:1px solid black;
-    max-width: 30%;
+    border:5px solid #ADD052;
+    max-width: 50%;
     height: auto;
+    padding: 7px;
 
 }
 
