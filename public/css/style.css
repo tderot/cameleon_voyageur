@@ -44,11 +44,12 @@
 /*Fin Header */
 
 
-
+/* EMPLACEMENTS */
 
 .moduletableemplacements {
-    background-image: url("../img/bg_trucks.jpeg");
-    background-repeat: repeat-x;
+    /*background-image: url("../img/bg-trucks2.png");
+    background-repeat: repeat;*/
+    background: #F0F0F2;
     min-height: 420px;
     padding: 25px 0;
     width: 100%;
@@ -64,12 +65,14 @@
 
 .col-xs-6 .emplacements{
     width:3%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 37f0146c564d20b4675dbdc19b9ac4ac84ef69be
 }
 
+/* CONCEPT */
 .img-circle{
-
-
     border:1px solid black;
     max-width: 30%;
     height: auto;
