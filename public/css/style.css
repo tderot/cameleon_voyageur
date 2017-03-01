@@ -1,3 +1,15 @@
+/*POLICES*/
+@font-face {
+    font-family: 'sierra_madre';
+    src: url('../fonts/sierra_madre-webfont.woff2') format('woff2'),
+         url('../fonts/sierra_madre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*FIN POLICES*/
+
 /*Header*/
 
 /*Navbar */
