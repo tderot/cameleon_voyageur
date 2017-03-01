@@ -1,3 +1,14 @@
+/*POLICES*/
+@font-face {
+    font-family: 'sierra_madre';
+    src: url('../fonts/sierra_madre-webfont.woff2') format('woff2'),
+         url('../fonts/sierra_madre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*FIN POLICES*/
 .og-grid {
 	list-style: none;
 	padding: 20px 0;
@@ -118,7 +129,8 @@
 	font-size: 52px;
 	padding: 40px 0 10px;
 	margin-bottom: 10px;
-
+    font-family: 'sierra_madre';
+    color: #343331;
 }
 
 .og-details p {
