@@ -1,44 +1,50 @@
+/*Header*/
+
+/*Navbar */
 #navbar {
-    margin-bottom: 0;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    border-bottom: thin solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: thin solid rgba(0, 0, 0, 0.25);
 }
-#navbar-modal {
-    background-color: rgba(0, 0, 0, 0.8)!important;
-}
-#navbar-content {
-    background-color: rgba(0, 0, 0, 0.8)!important;
-}
-#navbar-header {
-    border: none;
-}
-#navbar-close {
-    font-size: 36px;
-    float: right;
-    color: white;
-}
-.navbar-list {
-    color: white!important;
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-.navbar_color {
-    background-color: rgba(0, 0, 0, 1)!important;
-}
-.navbar_logo {
-    height: 70px;
-    padding: 1%;
+#navbar-collapsed {
+    border-top: none;
 }
 .navbar-toggle {
     border: none;
 }
+.navbar-color {
+    background-color: rgba(0, 0, 0, 1)!important;
+}
+.navbar-logo {
+    height: 100px;
+}
+.navbar-nav > li > a {
+    color: white !important;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        line-height: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 50px;
+    }
+    .navbar-nav > li > a {
+        font-size: 24px;
+    }
+}
+/*Cover*/
 .cover {
     min-height: 750px;
     background: url("../img/cover.jpg") center center;
     background-size: cover;
     position: relative;
 }
+
+/*Fin Header */
+
+
+
 
 .moduletableemplacements {
     background-image: url("../img/bg_trucks.jpeg");
@@ -50,7 +56,7 @@
 
 .moduletableemplacements h2 {
     font-size: 
-    color: white;
+        color: white;
 }
 .col-md-2 .emplacements{
     width: 13.661%; 
