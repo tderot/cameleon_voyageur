@@ -107,3 +107,17 @@ footer {
 
 }
 
+.truckimg{
+
+    display: inline-block;
+  
+}
+
+.truckimg span{
+    visibility: hidden;
+
+}
+
+.truckimg img:hover span{
+    visibility: visible;
+}
