@@ -43,6 +43,33 @@
 
 /*Fin Header */
 
+/*Footer */
+footer {
+    
+}
+.back-top {
+    float: right;
+}
+#footer_fb {
+    border-right: thin solid rgba(0, 0, 0, 0.25);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#footer_contact {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#footer_legal {
+    padding-top: 5px;
+    border-top: thin solid rgba(0, 0, 0, 0.25);
+}
+.fb_like {
+    margin-left: 40%;
+}
+.fb_plugin {
+    margin-left: 10%;
+}
+/*Fin footer */
 
 /* EMPLACEMENTS */
 
