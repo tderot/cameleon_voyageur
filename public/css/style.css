@@ -60,14 +60,3 @@
     width:3%;
 }
 
-.og-expander:last-of-type {
-	position: absolute;
-	background: #FFE3BB;
-	top: auto;
-	left: 0;
-	width: 100%;
-	margin-top: 10px;
-	text-align: left;
-	height: 0;
-	overflow: hidden;
-}

@@ -37,7 +37,7 @@
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: #F0EFF1;
 	top: auto;
 	left: 0;
 	width: 100%;
@@ -46,6 +46,8 @@
 	height: 0;
 	overflow: hidden;
 }
+
+
 
 .og-expander-inner {
 	padding: 50px 30px;
