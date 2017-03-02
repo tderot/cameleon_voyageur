@@ -200,16 +200,3 @@
 
 
 /*Hover */
-
-.info{
-    background-color: #F9983A;
-    opacity: 0.8;
-    position: absolute;
-    display: block;
-    color: White;
-    font-size: 16px;
-    height: 250px!important;
-    text-align: center;
-    padding: 1%;
-}
-
