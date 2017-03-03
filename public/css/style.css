@@ -71,6 +71,10 @@
         font-size: 24px;
     }
 }
+.btn-warning{
+    margin-bottom: 30px;
+}
+
 /*Cover*/
 .cover {
     min-height: 750px;
