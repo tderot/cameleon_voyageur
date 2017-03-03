@@ -1,3 +1,5 @@
+/* Général */
+
 @media (min-width: 768px) {
     :target:before {
         content:"";
@@ -14,7 +16,19 @@
         margin:-50px 0 0; /* negative fixed header height */
     }
 }
-/*POLICES*/
+h1{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: 'sierra_madre';
+    font-size: 60px;
+}
+.orange{
+    color: #F9983A;
+    font-family: 'sierra_madre';
+}
+
+/*Polices*/
+
 @font-face {
     font-family: 'sierra_madre';
     src: url('../fonts/sierra_madre-webfont.woff2') format('woff2'),
@@ -30,13 +44,13 @@
     font-family: 'montserrat', sans-serif;
 }
 
-/*FIN POLICES*/
-
+/*Fin Polices*/
+/*Fin Général*/
 
 
 /*Header*/
+/*Navbar*/
 
-/*Navbar */
 #navbar {
     background-color: rgba(0, 0, 0, 0.2);
     border-bottom: thin solid rgba(0, 0, 0, 0.2);
@@ -60,8 +74,6 @@
 .navbar-nav > li > a:hover {
     color: #ADD052 !important;
 }
-
-
 @media (min-width: 768px) {
     .navbar-nav > li > a {
         line-height: 70px;
@@ -78,18 +90,15 @@
         font-size: 24px;
     }
 }
-.btn-warning{
-    margin-bottom: 30px;
-}
 
 /*Cover*/
+
 .cover {
     min-height: 750px;
     background: url("../img/cover.jpg") center center;
     background-size: cover;
     position: relative;
 }
-
 .cover_h1 {
     font-size: 90px;
     font-weight: 700;
@@ -126,22 +135,94 @@
         font-size: 20px;
     }
 }
+
+/*Fin Cover */
 /*Fin Header */
 
+/*Concept*/
 
-H1{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    font-family: 'sierra_madre';
-    font-size: 60px;
-
+.img-circle{
+    border: 5px solid #F9983A;
+    max-width: 50%;
+    height: auto;
+    padding: 7px;
 }
+
+/*Fin Concept*/
+
+/*Carte*/
+
+#menu {
+    background-image: url(../img/bg-carte.png);
+}
+.grid-li {
+    border: thin solid white;
+}
+.btn-warning{
+    margin-bottom: 30px;
+}
+
+/*Fin Carte*/
+
+/*Plan*/
+
+.moduletableemplacements {
+    background-image: url(../img/bg-plan.jpeg);
+    background-repeat: repeat;
+    /*background: #F0F0F2;*/
+    min-height: 420px;
+    padding: 25px 0;
+    width: 100%;
+}
+.trucks-small {
+    background-image: url(../img/bg-plan.jpeg);
+}
+.moduletableemplacements h2 {
+    font-size: 
+        color: white;
+}
+.findUs{
+    color: white;
+    font-family: 'sierra_madre';
+}
+.trucks{
+    text-align: center;
+}
+.truck {
+    display: inline-block;
+}
+.truck-info {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    font-size: 16px;
+}
+.truck:hover .truck-info {
+    display: block;
+}
+.truck-small {
+    margin-bottom: 5%;
+    color: white;
+}
+.truck-info p{
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/*Fin Plan*/
+
 /*Footer */
+/*To Top*/
+
 .to-top {
     height: 60px;
     background-color: #3A3A3B ; 
 }
-
 .to-top .to-top-wrap {
     height: 60px;
     width: 70px;
@@ -155,7 +236,6 @@ H1{
     height: 100%;
     color: white;
 }
-
 .to-top .to-top-wrap a:hover, .to-top .to-top-wrap a:focus {
     background-color: rgba(0, 0, 0, 0.4); 
 }
@@ -166,6 +246,8 @@ H1{
 .to-top .row {
     position: relative; 
 }
+
+/*Fb&Contact*/
 
 #footer_fb {
     border-right: thin solid rgba(0, 0, 0, 0.25);
@@ -183,85 +265,5 @@ H1{
     margin-left: 10%;
 }
 
-
-/*Fin footer */
-
-.grid-li {
-    border: thin solid white;
-}
-
-/* EMPLACEMENTS */
-
-#menu {
-    background-image: url(../img/bg-trucks2.png);
-}
-.trucks-small {
-    background-image: url(../img/bg-test.jpeg);
-}
-.moduletableemplacements {
-    background-image: url(../img/bg-test.jpeg);
-    background-repeat: repeat;
-    /*background: #F0F0F2;*/
-    min-height: 420px;
-    padding: 25px 0;
-    width: 100%;
-}
-
-.moduletableemplacements h2 {
-    font-size: 
-        color: white;
-}
-
-.trucks{
-    text-align: center;
-}
-
-
-.findUs{
-    color: white;
-    font-family: 'sierra_madre';
-}
-
-.orange{
-    color: #F9983A;
-    font-family: 'sierra_madre';
-}
-
-/* CONCEPT */
-.img-circle{
-    border: 5px solid #F9983A;
-    max-width: 50%;
-    height: auto;
-    padding: 7px;
-
-}
-/*Hover */
-
-.truck {
-    display: inline-block;
-}
-.truck-info {
-    display: none;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 25%;
-    left: 0;
-    font-size: 16px;
-}
-
-.truck:hover .truck-info {
-    display: block;
-}
-
-
-.truck-small {
-    margin-bottom: 5%;
-    color: white;
-}
-.truck-info p{
-    color: white;
-    font-size: 20px;
-    margin-top: 40px;
-}
+/*Fin Fb&Contact*/
+/*Fin footer*/
