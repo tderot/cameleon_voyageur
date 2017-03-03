@@ -32,6 +32,8 @@
 
 /*FIN POLICES*/
 
+
+
 /*Header*/
 
 /*Navbar */
@@ -184,9 +186,15 @@ H1{
 
 /*Fin footer */
 
-
+.grid-li {
+    border: thin solid white;
+}
 
 /* EMPLACEMENTS */
+
+#menu {
+    background-image: url(../img/bg-trucks2.png);
+}
 .trucks-small {
     background-image: url(../img/bg-test.jpeg);
 }
