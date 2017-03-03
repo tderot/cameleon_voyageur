@@ -130,12 +130,14 @@
 H1{
     margin-bottom: 50px;
     margin-top: 50px;
+    font-family: 'sierra_madre';
+    font-size: 60px;
     
 }
 /*Footer */
 .to-top {
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: #3A3A3B ; 
 }
 
 .to-top .to-top-wrap {
@@ -187,7 +189,7 @@ H1{
 /* EMPLACEMENTS */
 
 .moduletableemplacements {
-    background-image: url("../img/bg_trucks2.jpeg");
+    background-image: url(../img/bg-test.jpeg);
     background-repeat: repeat;
     /*background: #F0F0F2;*/
     min-height: 420px;
@@ -202,6 +204,17 @@ H1{
 
 .trucks{
     text-align: center;
+}
+
+
+.findUs{
+    color: white;
+    font-family: 'sierra_madre';
+}
+
+.orange{
+    color: #F9983A;
+    font-family: 'sierra_madre';
 }
 
 /* CONCEPT */
@@ -230,4 +243,10 @@ H1{
 
 .truck:hover .truck-info {
     display: block;
+}
+
+.truck-info p{
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
 }
