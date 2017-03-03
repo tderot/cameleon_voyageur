@@ -212,14 +212,12 @@ H1{
     padding: 7px;
 
 }
-
-
 /*Hover */
 
 .truck {
-
+    display: inline-block;
 }
-div.title {
+.truck-info {
     display: none;
     text-align: center;
     width: 100%;
@@ -227,8 +225,9 @@ div.title {
     position: absolute;
     top: 25%;
     left: 0;
+    font-size: 16px;
 }
 
-img.truck:hover + div {
+.truck:hover .truck-info {
     display: block;
 }

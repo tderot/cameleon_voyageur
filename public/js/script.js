@@ -8,7 +8,7 @@ $(function() {
         }
     });
 });
-function test_fb(){
+function fb(){
     var width = Math.round(window.innerWidth);
     var width2 = Math.round(window.innerWidth/3);
     if(width<=360){
@@ -19,7 +19,12 @@ function test_fb(){
         document.getElementById('footer_fb').innerHTML='<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flecameleonvoyageur%2F&tabs=timeline&width='+width+'&height='+width2+'&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="'+width+'" height="'+width2+'" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" class="fb_plugin"></iframe>';
     }
 }
-test_fb();
+fb();
+function plan(){
+    var width = Math.round(window.innerWidth);
+}
+plan();
 $(window).resize(function(){
-    test_fb();
+    fb();
+    plan();
 });
