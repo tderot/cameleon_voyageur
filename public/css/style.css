@@ -55,6 +55,11 @@
 .navbar-nav > li > a {
     color: white !important;
 }
+.navbar-nav > li > a:hover {
+    color: #ADD052 !important;
+}
+
+
 @media (min-width: 768px) {
     .navbar-nav > li > a {
         line-height: 70px;
@@ -121,6 +126,12 @@
 }
 /*Fin Header */
 
+
+H1{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
 /*Footer */
 .to-top {
     height: 60px;
