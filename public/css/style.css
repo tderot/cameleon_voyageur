@@ -177,10 +177,6 @@ h1{
 .trucks-small {
     background-image: url(../img/bg-plan.jpeg);
 }
-.moduletableemplacements h2 {
-    font-size: 
-        color: white;
-}
 .findUs{
     color: white;
     font-family: 'sierra_madre';
@@ -207,6 +203,9 @@ h1{
 .truck-small {
     margin-bottom: 5%;
     color: white;
+}
+.ul-small {
+    list-style: none;
 }
 .truck-info p{
     color: white;
