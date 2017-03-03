@@ -187,7 +187,9 @@ H1{
 
 
 /* EMPLACEMENTS */
-
+.trucks-small {
+    background-image: url(../img/bg-test.jpeg);
+}
 .moduletableemplacements {
     background-image: url(../img/bg-test.jpeg);
     background-repeat: repeat;
@@ -248,6 +250,7 @@ H1{
 
 .truck-small {
     margin-bottom: 5%;
+    color: white;
 }
 .truck-info p{
     color: white;
