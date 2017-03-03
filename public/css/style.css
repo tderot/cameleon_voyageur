@@ -22,8 +22,12 @@ h1{
     font-family: 'sierra_madre';
     font-size: 60px;
 }
-.orange{
+.text-orange{
     color: #F9983A;
+    font-family: 'sierra_madre';
+}
+.text-white{
+    color: white;
     font-family: 'sierra_madre';
 }
 
@@ -99,39 +103,39 @@ h1{
     background-size: cover;
     position: relative;
 }
-.cover_h1 {
+.cover-h1 {
     font-size: 90px;
     font-weight: 700;
     font-family: 'sierra_madre';
 }
-.cover_h2{
+.cover-h2{
     font-size: 40px;
 }
 @media (min-width: 768px) {
-    .cover_text {
+    .cover-text {
         color: white;
         margin-top: 350px;
     }
-    .cover_h1 {
+    .cover-h1 {
         font-size: 90px;
         font-weight: 700;
         font-family: 'sierra_madre';
     }
-    .cover_h2{
+    .cover-h2{
         font-size: 40px;
     }
 }
 @media (max-width: 768px) {
-    .cover_text {
+    .cover-text {
         color: white;
         margin-top: 100px;
     }
-    .cover_h1 {
+    .cover-h1 {
         font-size: 60px;
         font-weight: 300;
         font-family: 'sierra_madre';
     }
-    .cover_h2{
+    .cover-h2{
         font-size: 20px;
     }
 }
@@ -166,7 +170,7 @@ h1{
 
 /*Plan*/
 
-.moduletableemplacements {
+.trucks-big {
     background-image: url(../img/bg-plan.jpeg);
     background-repeat: repeat;
     /*background: #F0F0F2;*/
@@ -176,10 +180,6 @@ h1{
 }
 .trucks-small {
     background-image: url(../img/bg-plan.jpeg);
-}
-.findUs{
-    color: white;
-    font-family: 'sierra_madre';
 }
 .trucks{
     text-align: center;
@@ -204,7 +204,7 @@ h1{
     margin-bottom: 5%;
     color: white;
 }
-.ul-small {
+.trucks-list {
     list-style: none;
 }
 .truck-info p{
@@ -248,19 +248,19 @@ h1{
 
 /*Fb&Contact*/
 
-#footer_fb {
+.footer-fb {
     border-right: thin solid rgba(0, 0, 0, 0.25);
     padding-top: 5px;
 }
-#footer_contact {
+.footer-contact {
     padding-top: 5px;
 }
-.fb_like {
+.fb-like {
     margin-left: 40%;
     margin-top: 5%;
     margin-bottom: 0%;
 }
-.fb_plugin {
+.fb-plugin {
     margin-left: 10%;
 }
 
