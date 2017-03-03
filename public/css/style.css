@@ -231,3 +231,7 @@ H1{
 .truck:hover .truck-info {
     display: block;
 }
+
+.truck-small {
+    margin-bottom: 5%;
+}
