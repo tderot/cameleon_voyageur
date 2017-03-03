@@ -200,3 +200,20 @@
 
 
 /*Hover */
+
+.truck {
+
+}
+div.title {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+img.truck:hover + div {
+    display: block;
+}
