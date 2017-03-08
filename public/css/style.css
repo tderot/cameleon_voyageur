@@ -97,11 +97,6 @@ h1{
 
 /*Cover*/
 
-.cover {
-    min-height: 750px;
-    background-size: cover;
-    position: relative;
-}
 .cover-h1 {
     font-size: 90px;
     font-weight: 700;
@@ -172,6 +167,7 @@ h1{
 .trucks-big {
     background-image: url(../img/bg-plan.jpeg);
     background-repeat: repeat;
+    background-size: cover;
     /*background: #F0F0F2;*/
     min-height: 420px;
     padding: 25px 0;

@@ -1,4 +1,18 @@
-<div class="container-fluid cover" id="cover" style="background: url('public/img/cover.jpg') center center;">
+<?php
+    $querySelect= "SELECT * FROM cover";
+
+    $resultat= mysqli_query($bdd,$querySelect);
+
+    while($data=mysqli_fetch_assoc($resultat)){
+
+        $cover=$data['img'];
+        $title=$data['title'];
+        $text=$data['text'];
+    }
+
+?>
+
+<div class="container-fluid" id="cover" style="background: url('public/img/<?php echo $cover;?>') center center; background-repeat: no-repeat; min-height: 750px; background-size: cover; position: relative;">
     <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -22,8 +36,8 @@
     </nav>
     <div class="row text-center">
         <div class="col-xs-10 col-xs-offset-1 cover-text">
-            <h1 class="cover-h1">LE CAMELEON VOYAGEUR</h1>
-            <h2 class="cover-h2">En région Orléanaise</h2>
+            <h1 class="cover-h1"><?php echo $title;?></h1>
+            <h2 class="cover-h2"><?php echo $text;?></h2>
         </div>
     </div>
 </div>
