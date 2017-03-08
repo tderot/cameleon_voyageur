@@ -1,0 +1,268 @@
+/* Général */
+
+@media (min-width: 768px) {
+    :target:before {
+        content:"";
+        display:block;
+        height:100px; /* fixed header height*/
+        margin:-100px 0 0; /* negative fixed header height */
+    }
+}
+@media (max-width: 768px) {
+    :target:before {
+        content:"";
+        display:block;
+        height:50px; /* fixed header height*/
+        margin:-50px 0 0; /* negative fixed header height */
+    }
+}
+h1{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: 'sierra_madre';
+    font-size: 60px;
+}
+.text-orange{
+    color: #F9983A;
+    font-family: 'sierra_madre';
+}
+.text-white{
+    color: white;
+    font-family: 'sierra_madre';
+}
+
+/*Polices*/
+
+@font-face {
+    font-family: 'sierra_madre';
+    src: url('../fonts/sierra_madre-webfont.woff2') format('woff2'),
+        url('../fonts/sierra_madre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-medium-webfont.woff') format('woff');
+}
+* {
+    font-family: 'montserrat', sans-serif;
+}
+
+/*Fin Polices*/
+/*Fin Général*/
+
+
+/*Header*/
+/*Navbar*/
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: thin solid rgba(0, 0, 0, 0.2);
+}
+#navbar-collapsed {
+    border-top: none;
+}
+.navbar-toggle {
+    border: none;
+    border-radius: none;
+}
+.navbar-color {
+    background-color: rgba(0, 0, 0, 1)!important;
+}
+.navbar-logo {
+    height: 100px;
+}
+.navbar-nav > li > a {
+    color: white !important;
+}
+.navbar-nav > li > a:hover {
+    color: #ADD052 !important;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        line-height: 70px;
+    }
+    .navbar-nav > li > a {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 50px;
+    }
+    .navbar-nav > li > a {
+        font-size: 24px;
+    }
+}
+
+/*Cover*/
+
+.cover {
+    min-height: 750px;
+    background: url("../img/cover.jpg") center center;
+    background-size: cover;
+    position: relative;
+}
+.cover-h1 {
+    font-size: 90px;
+    font-weight: 700;
+    font-family: 'sierra_madre';
+}
+.cover-h2{
+    font-size: 40px;
+}
+@media (min-width: 768px) {
+    .cover-text {
+        color: white;
+        margin-top: 350px;
+    }
+    .cover-h1 {
+        font-size: 90px;
+        font-weight: 700;
+        font-family: 'sierra_madre';
+    }
+    .cover-h2{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .cover-text {
+        color: white;
+        margin-top: 100px;
+    }
+    .cover-h1 {
+        font-size: 60px;
+        font-weight: 300;
+        font-family: 'sierra_madre';
+    }
+    .cover-h2{
+        font-size: 20px;
+    }
+}
+
+/*Fin Cover */
+/*Fin Header */
+
+/*Concept*/
+
+.img-circle{
+    border: 5px solid #F9983A;
+    max-width: 50%;
+    height: auto;
+    padding: 7px;
+}
+
+/*Fin Concept*/
+
+/*Carte*/
+
+#menu {
+    background-image: url(../img/bg-carte.png);
+}
+.grid-li {
+    border: thin solid white;
+}
+.btn-warning{
+    margin-bottom: 30px;
+}
+
+/*Fin Carte*/
+
+/*Plan*/
+
+.trucks-big {
+    background-image: url(../img/bg-plan.jpeg);
+    background-repeat: repeat;
+    /*background: #F0F0F2;*/
+    min-height: 420px;
+    padding: 25px 0;
+    width: 100%;
+}
+.trucks-small {
+    background-image: url(../img/bg-plan.jpeg);
+}
+.trucks{
+    text-align: center;
+}
+.truck {
+    display: inline-block;
+}
+.truck-info {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    font-size: 16px;
+}
+.truck:hover .truck-info {
+    display: block;
+}
+.truck-small {
+    margin-bottom: 5%;
+    color: white;
+}
+.trucks-list {
+    list-style: none;
+}
+.truck-info p{
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/*Fin Plan*/
+
+/*Footer */
+/*To Top*/
+
+.to-top {
+    height: 60px;
+    background-color: #3A3A3B ; 
+}
+.to-top .to-top-wrap {
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center; 
+}
+.to-top .to-top-wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.to-top .to-top-wrap a:hover, .to-top .to-top-wrap a:focus {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+.to-top .to-top-wrap i {
+    font-size: 30px;
+    line-height: 55px; 
+}
+.to-top .row {
+    position: relative; 
+}
+
+/*Fb&Contact*/
+
+.footer-fb {
+    border-right: thin solid rgba(0, 0, 0, 0.25);
+    padding-top: 5px;
+}
+.footer-contact {
+    padding-top: 5px;
+}
+.fb-like {
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+.fb-plugin {
+    margin-left: 10%;
+}
+
+/*Fin Fb&Contact*/
+/*Fin footer*/
