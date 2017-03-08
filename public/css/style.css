@@ -99,7 +99,6 @@ h1{
 
 .cover {
     min-height: 750px;
-    background: url("../img/cover.jpg") center center;
     background-size: cover;
     position: relative;
 }
