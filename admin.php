@@ -87,7 +87,7 @@ mysqli_set_charset($bdd, 'utf8');
                 $resultat = mysqli_query($bdd, $querySelect);
 
                 while ($data = mysqli_fetch_assoc($resultat)) {
-                    $id= $data['id'];
+                    $id = $data['id'];
                     $img = $data['img'];
                     $title = $data['title'];
                     $text = $data['text'];
@@ -111,6 +111,7 @@ mysqli_set_charset($bdd, 'utf8');
                         <h4 class=\"modal-title\">Modifier le concept</h4>
                       </div>
                       <div class=\"modal-body\">
+                      <!--Modification du concept-->
                         <form method=\"post\" action=\"php/action.php\" enctype=\"multipart/form-data\">
                                 <input type=\"text\" placeholder=\"Entrez votre titre principal\" name=\"title\"><br>
                                 <textarea name='text' placeholder='Entrez votre description'></textarea>
@@ -119,9 +120,9 @@ mysqli_set_charset($bdd, 'utf8');
                                 <input type=\"submit\" value=\"modifConcept\" name=\"action\">
                         </form>
                       </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->";
+                    </div>
+                  </div>
+                </div>";
 
                 }
 
@@ -129,8 +130,159 @@ mysqli_set_charset($bdd, 'utf8');
 
             </div>
 
+            <?php
+
+            $querySelect = "SELECT * FROM cat_menu";
+            $resultat = mysqli_query($bdd, $querySelect);
+
+            $select = "<select class=\"form-control\" name='id_cat_menu'> ";
+
+            while ($data = mysqli_fetch_assoc($resultat)) {
+                $id = $data['id'];
+                $title = $data['title'];
+
+
+                $select .= "<option value=$id>$title</option>";
+            }
+
+            $select .= '</select>';
+
+            ?>
+
+            <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#ajoutermenu">Ajouter un
+                menu</a>
+
+            <div class="modal fade" tabindex="-1" role="dialog" id="ajoutermenu">
+                <div class="modal-dialog" role="document">
+                    <div class=\"modal-content\">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Modifier le menu</h4>
+                        </div>
+                        <div class="modal-body">
+                            <!--Modification du concept-->
+
+                            <form method="post" action="php/action.php" enctype="multipart/form-data">
+                                <?php echo $select; ?>
+                                <label for='item'>Entrez le nom du produit</label>
+                                <input type="text" name="item"><br>
+                                <label for='text'>Entrez votre descriptif</label>
+                                <textarea name='text'></textarea>
+                                <label for='price'>Fixez votre prix</label>
+                                <input type="text" name="price"><br>
+                                <input type="file" name="img">
+                                <input type='hidden' name='id'>
+                                <input type="submit" value="addmenu" name="action">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                    <th>Actions</th>
+                </tr>
+
+                </thead>
+
+                <tbody>
+
+
+                <?php
+                $querySelect = "SELECT * FROM cat_menu";
+                $resultat = mysqli_query($bdd, $querySelect);
+
+                $modal = '';
+
+
+                while ($data = mysqli_fetch_assoc($resultat)) {
+
+                    $idCat = $data['id'];
+                    $title = $data['title'];
+
+                    $querySelect2 = "SELECT * FROM menu WHERE id_cat_menu=" . $idCat;
+                    $resultat2 = mysqli_query($bdd, $querySelect2);
+
+
+                    while ($data2 = mysqli_fetch_assoc($resultat2)) {
+
+                        $price = $data2['price'];
+                        $id = $data2['id'];
+                        $text = $data2['text'];
+                        $item = $data2['item'];
+                        echo "<tr><td>$title</td><td>$item</td><td>$text</td><td>$price</td><td><a href=\"#\" class=\"btn btn-primary\" role=\"button\" data-toggle=\"modal\" data-target=\"#modalmenumodif$id\">Modifier</a>  <form method=\"post\" action=\"php/action.php\" enctype=\"multipart/form-data\"><input type=\"submit\" value=\"supprmenu\" name=\"action\"><input type='hidden' value='$id' name='id'></form></td></tr>";
+
+                        $modal .= "
+                <div class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" id=\"modalmenumodif$id\">
+                  <div class=\"modal-dialog\" role=\"document\">
+                    <div class=\"modal-content\">
+                      <div class=\"modal-header\">
+                        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>
+                        <h4 class=\"modal-title\">Modifier le menu</h4>
+                      </div>
+                      <div class=\"modal-body\">
+                      <!--Modification du concept-->
+                                                
+                        <form method=\"post\" action=\"php/action.php\" enctype=\"multipart/form-data\">
+                        <label for='item'>Entrez le nom du produit</label>
+                        <input type=\"text\" value=\"$item\" name=\"item\"><br>
+                        <label for='text'>Entrez votre descriptif</label>
+                        <textarea name='text'>$text</textarea>
+                        <label for='price'>Fixez votre prix</label>
+                        <input type=\"text\" value=\"$price\" name=\"price\"><br>
+                        <input type=\"file\" value=\"Photo\" name=\"img\">
+                        <input type='hidden' value='$id' name='id'>
+                        <input type=\"submit\" value=\"modifMenu\" name=\"action\">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>";
+                    }
+
+                }
+
+
+                ?>
+                </tbody>
+            </table>
+            <?php
+            echo $modal;
+            ?>
 
         </div>
+
+        <form method="post" action="php/action.php">
+
+            <?php
+
+            $querySelect = "SELECT * FROM map";
+
+            $resultat = mysqli_query($bdd, $querySelect);
+
+            while ($data = mysqli_fetch_assoc($resultat)) {
+
+                $day = $data['day'];
+                $text = $data['text'];
+
+                echo "<label for='$day'>Jour de la semaine</label>
+                      <input type='text' value='$text'name='$day'>";
+            }
+            ?>
+
+            <input type="submit" value="modifmap">
+
+            </form>
+
+
+
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

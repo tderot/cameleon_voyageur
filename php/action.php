@@ -32,4 +32,44 @@ else if($_POST['action']=='modifConcept'){
     }
 
 }
+else if($_POST['action']=='modifMenu'){
+
+    $query= "UPDATE menu SET text='".$_POST['text']."',item='".$_POST['item']."',price='".$_POST['price']."' WHERE id='".$_POST['id']."'";
+
+    if(mysqli_query($bdd,$query)){
+        echo'Validé';
+    }
+
+    else{
+        echo'Echec';
+    }
+
+}
+
+else if($_POST['action']=='supprmenu'){
+
+    $query= "DELETE FROM menu WHERE id='".$_POST['id']."'";
+
+    if(mysqli_query($bdd,$query)){
+        echo'Validé';
+    }
+
+    else{
+        echo'Echec';
+    }
+
+}
+else if($_POST['action']=='addmenu'){
+
+    $query= "INSERT INTO menu VALUES (NULL,'".$_POST['item']."','".$_POST['text']."','".$_POST['price']."','".$_POST['id_cat_menu']."')";
+
+    if(mysqli_query($bdd,$query)){
+        echo'Validé';
+    }
+
+    else{
+        echo'Echec';
+    }
+
+}
 
