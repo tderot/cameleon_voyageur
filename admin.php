@@ -215,7 +215,7 @@ mysqli_set_charset($bdd, 'utf8');
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title">Modifier le menu</h4>
+                                    <h4 class="modal-title">Ajouter un menu</h4>
                                 </div>
                                 <div class="modal-body">
                                     <!--Modification du concept-->
@@ -301,10 +301,6 @@ mysqli_set_charset($bdd, 'utf8');
                                                     <div class=\"form-group\">
                                                         <label for=\"text\">Entrez votre descriptif</label>
                                                         <textarea name='text' name=\"text\" class=\"form-control\">$item_text</textarea>
-                                                    </div>
-                                                    <div class=\"form-group\">
-                                                        <label for=\"item\">Entrez le nom du produit</label>
-                                                        <input type=\"text\" value=\"$item_item\" name=\"item\" class=\"form-control\">
                                                     </div>
                                                     <div class=\"form-group\">
                                                         <label for=\"item\">Fixez votre prix</label>
